@@ -10,9 +10,16 @@ No se cambian los títulos numerados: las comprobaciones automáticas los buscan
 
 ## 1. Análisis del entorno
 
-<!-- Quién usará el juego, desde dónde, con qué datos y qué condiciona eso al diseño (apartado 2 de los apuntes). -->
+Este juego lo usaría alguien que está aprendiendo a programar, por ejemplo
+la gente de clase, para practicar. Se jugaría en la consola (la pantalla
+negra con texto), sin dibujos ni ratón.
 
-_Pendiente._
+Eso significa que:
+- Todo se hace escribiendo: el programa escribe mensajes y la persona
+  teclea sus números.
+- Lo que escribe la persona entra como texto, así que habrá que comprobar
+  que de verdad es un número y no otra cosa (una letra, por ejemplo).
+- Juega una sola persona y una partida cada vez.
 
 ## 2. Análisis del problema
 
