@@ -1,6 +1,6 @@
 # Diseño del juego «adivina el número»
 
-Autoría: *Nombre Apellidos*
+Autoría: *Irene Lago González*
 
 <!--
 Instrucciones: se sustituye cada línea «_Pendiente._» por el contenido del apartado.
