@@ -44,8 +44,9 @@ Eso significa que:
    - 1.2. Poner el contador de intentos a 0
 2. Jugar
    - 2.1. Pedir un número a la persona
-   - 2.2. Sumar 1 al contador de intentos
-   - 2.3. Comparar el número con el secreto y dar la pista
+   - 2.2. Comprobar que es un número válido (si no, avisar y volver a pedirlo)
+   - 2.3. Sumar 1 al contador de intentos
+   - 2.4. Comparar el número con el secreto y dar la pista
 3. Terminar
    - 3.1. Decir que ha acertado
    - 3.2. Mostrar cuántos intentos ha necesitado
