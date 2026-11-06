@@ -190,4 +190,4 @@ de intentos final no refleja los intentos reales.
 - Si el texto no es un número (por ejemplo "hola"), `int()` da un error y el programa se cierra. Por eso se controla con `try / except`.
 - `random.randint(1, 100)` incluye el 1 y el 100.
 - El contador debe subir **solo** después de comprobar que el número es válido.
-- Al final se muestra `intentos`, y el bucle solo termina al acertar.
+- Al final se muestra `intentos`, el bucle solo termina al acertar.
