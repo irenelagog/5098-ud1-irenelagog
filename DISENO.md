@@ -172,8 +172,6 @@ de intentos final no refleja los intentos reales.
 
 ## 9. Verificación en Python
 
-## 9. Verificación en Python
-
 | Símbolo del diagrama | Construcción en Python |
 |---|---|
 | Inicio / Fin | Principio y final del programa |
