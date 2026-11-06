@@ -166,10 +166,28 @@ Valoración (1 = peor, 3 = mejor):
 al teclear. La opción B es un poco más simple de dibujar, pero el número
 de intentos final no refleja los intentos reales.
 
-_Pendiente._
+
 
 ## 9. Verificación en Python
 
-<!-- Tabla: Símbolo o paso | Construcción en Python | Detalle a tener en cuenta (apartado 8). -->
+## 9. Verificación en Python
 
-_Pendiente._
+| Símbolo del diagrama | Construcción en Python |
+|---|---|
+| Inicio / Fin | Principio y final del programa |
+| `secreto ← número aleatorio 1 a 100` | `secreto = random.randint(1, 100)` (hay que hacer antes `import random`) |
+| `intentos ← 0` | `intentos = 0` |
+| Pedir número (`LEER texto`) | `texto = input("Escribe un número del 1 al 100: ")` |
+| ¿Es un número? | `try: numero = int(texto)` y `except ValueError:` si falla |
+| ¿Está entre 1 y 100? | `if numero < 1 or numero > 100:` |
+| `intentos ← intentos + 1` | `intentos += 1` |
+| ¿numero = secreto? / ¿numero < secreto? | `if ... elif ... else` |
+| Escribir un mensaje | `print("...")` |
+| Flechas que vuelven a pedir el número | Bucle `while True:` con `continue` en los avisos y `break` al acertar |
+
+**Detalles a tener en cuenta**
+- `input()` siempre devuelve **texto**, aunque se escriba un 5. Hay que convertirlo con `int()` antes de comparar.
+- Si el texto no es un número (por ejemplo "hola"), `int()` da un error y el programa se cierra. Por eso se controla con `try / except`.
+- `random.randint(1, 100)` incluye el 1 y el 100.
+- El contador debe subir **solo** después de comprobar que el número es válido.
+- Al final se muestra `intentos`, y el bucle solo termina al acertar.
