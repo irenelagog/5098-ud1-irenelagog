@@ -23,9 +23,15 @@ Eso significa que:
 
 ## 2. Análisis del problema
 
-<!-- Tabla con tres columnas: Entrada | Proceso | Salida. -->
+## 2. Análisis del problema
 
-_Pendiente._
+- **Entrada:** el número que escribe la persona en cada intento.
+- **Proceso:** el programa piensa un número secreto entre 1 y 100. Cada vez
+  que la persona prueba un número, lo compara con el secreto y se apunta
+  cuántos intentos lleva. Esto se repite hasta que acierta.
+- **Salida:** en cada intento dice si el número secreto es mayor o menor
+  que el que se ha probado. Cuando se acierta, dice que has ganado y
+  cuántos intentos han hecho falta.
 
 ## 3. Estrategia
 
