@@ -133,8 +133,6 @@ flowchart TD
 
 ## 7. Prueba de escritorio
 
-## 7. Prueba de escritorio
-
 Número secreto: **42**. Los intentos cubren todos los caminos del diagrama.
 
 | Paso | Escribe | Camino del diagrama | Mensaje | intentos |
