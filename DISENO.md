@@ -146,8 +146,25 @@ Número secreto: **42**. Los intentos cubren todos los caminos del diagrama.
 
 ## 8. Alternativa y selección
 
-<!-- Una segunda forma de resolver algún aspecto (cómo contar los intentos, cómo tratar un intento
-fuera de rango...), una tabla de valoración con las dos opciones y la justificación (apartado 7). -->
+**Qué se compara:** cómo contar los intentos.
+
+- **Opción A (elegida):** solo cuentan los intentos válidos (un número
+  entre 1 y 100). Si escriben "hola" o 500, avisa y no suma.
+- **Opción B:** cuenta todo lo que se escriba, aunque no sea válido.
+
+Valoración (1 = peor, 3 = mejor):
+
+| Criterio | Opción A | Opción B |
+|---|---|---|
+| Es justa para quien juega | 3 | 1 |
+| Es fácil de entender | 3 | 3 |
+| Es fácil de hacer en el diagrama | 2 | 3 |
+| El resultado final es fiable | 3 | 2 |
+| **Total** | **11** | **9** |
+
+**Elección:** la opción A, porque no castiga a la persona por un despiste
+al teclear. La opción B es un poco más simple de dibujar, pero el número
+de intentos final no refleja los intentos reales.
 
 _Pendiente._
 
