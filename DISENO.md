@@ -23,8 +23,6 @@ Eso significa que:
 
 ## 2. Análisis del problema
 
-## 2. Análisis del problema
-
 - **Entrada:** el número que escribe la persona en cada intento.
 - **Proceso:** el programa piensa un número secreto entre 1 y 100. Cada vez
   que la persona prueba un número, lo compara con el secreto y se apunta
