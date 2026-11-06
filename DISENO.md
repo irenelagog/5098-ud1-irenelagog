@@ -133,10 +133,18 @@ flowchart TD
 
 ## 7. Prueba de escritorio
 
-<!-- Tabla con un número secreto y, al menos, tres intentos que recorran todos los caminos del diagrama:
-Intento | intento = secreto | intento > secreto | intentos | Mensaje (apartado 6). -->
+## 7. Prueba de escritorio
 
-_Pendiente._
+Número secreto: **42**. Los intentos cubren todos los caminos del diagrama.
+
+| Paso | Escribe | Camino del diagrama | Mensaje | intentos |
+|---|---|---|---|---|
+| 0 | (inicio) | Preparar el juego | — | 0 |
+| 1 | hola | ¿Es un número? → No | Solo valen números | 0 |
+| 2 | 500 | ¿Entre 1 y 100? → No | El rango va del 1 al 100 | 0 |
+| 3 | 30 | Sí, sí, no igual, 30 < 42 | El secreto es mayor | 1 |
+| 4 | 50 | Sí, sí, no igual, 50 > 42 | El secreto es menor | 2 |
+| 5 | 42 | Sí, sí, igual | ¡Has acertado! Intentos: 3 | 3 |
 
 ## 8. Alternativa y selección
 
