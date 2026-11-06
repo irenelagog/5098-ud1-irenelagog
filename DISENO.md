@@ -53,25 +53,83 @@ Eso significa que:
 
 ## 4. Dificultades y casos de prueba
 
-<!-- Lista de dificultades (entradas no válidas, fuera de rango, terminación del bucle...)
-y tabla con, al menos, cuatro casos de prueba: Caso | Secreto | Intentos | Resultado esperado (apartado 4). -->
+**Dificultades**
+- **Entradas no válidas:** si escriben "hola" u otra cosa que no sea un
+  número, el programa dice que solo valen números y vuelve a pedirlo,
+  sin contar el intento.
+- **Valores fuera de rango:** si escriben 107, el programa dice que el
+  rango va del 1 al 100 y vuelve a pedirlo, sin contar el intento.
+- **Terminación del bucle:** el bucle de intentos se repite hasta que el
+  número coincide con el secreto. Solo entonces se sale y se muestran los
+  intentos.
 
-_Pendiente._
+**Casos de prueba** (con número secreto 42)
+
+| Entrada | Qué debe pasar | ¿Cuenta intento? |
+|---|---|---|
+| 50 | Dice que el secreto es menor | Sí |
+| 30 | Dice que el secreto es mayor | Sí |
+| 42 | Acierta y termina | Sí |
+| hola | Dice que solo valen números | No |
+| 0 | Dice que el rango va del 1 al 100 | No |
+| 101 | Dice que el rango va del 1 al 100 | No |
+| 1 y 100 | Se aceptan (son los límites) | Sí |
 
 ## 5. Pseudocódigo
 
-<!-- Dentro de un bloque de código: tres acentos graves seguidos de «text», el pseudocódigo
-y otros tres acentos graves para cerrar. Convenciones del apartado 5. -->
+INICIO
+    secreto ← número aleatorio entre 1 y 100
+    intentos ← 0
+    acertado ← FALSO
 
-_Pendiente._
+    MIENTRAS acertado = FALSO
+        ESCRIBIR "Escribe un número del 1 al 100"
+        LEER texto
+
+        SI texto no es un número ENTONCES
+            ESCRIBIR "Solo valen números"
+        SINO
+            numero ← texto convertido a número
+            SI numero < 1 O numero > 100 ENTONCES
+                ESCRIBIR "El rango va del 1 al 100"
+            SINO
+                intentos ← intentos + 1
+                SI numero < secreto ENTONCES
+                    ESCRIBIR "El número secreto es mayor"
+                SINO SI numero > secreto ENTONCES
+                    ESCRIBIR "El número secreto es menor"
+                SINO
+                    acertado ← VERDADERO
+                FIN SI
+            FIN SI
+        FIN SI
+    FIN MIENTRAS
+
+    ESCRIBIR "¡Has acertado! Intentos: ", intentos
+FIN
 
 ## 6. Diagrama de flujo
 
-<!-- Opción A: imagen enlazada, por ejemplo ![Diagrama del juego](diagramas/adivina.svg),
-con su archivo fuente (.excalidraw, .drawio o .mmd) en la carpeta diagramas.
-Opción B: un bloque de código «mermaid» aquí mismo. -->
-
-_Pendiente._
+```mermaid
+flowchart TD
+    A([Inicio]) --> B["secreto ← número aleatorio 1 a 100<br/>intentos ← 0"]
+    B --> C[/"Pedir número (LEER texto)"/]
+    C --> D{"¿Es un número?"}
+    D -- No --> E[/"Escribir: Solo valen números"/]
+    E --> C
+    D -- Sí --> F{"¿Está entre 1 y 100?"}
+    F -- No --> G[/"Escribir: El rango va del 1 al 100"/]
+    G --> C
+    F -- Sí --> H["intentos ← intentos + 1"]
+    H --> I{"¿numero = secreto?"}
+    I -- Sí --> J[/"Escribir: ¡Has acertado! Intentos"/]
+    J --> K([Fin])
+    I -- No --> L{"¿numero < secreto?"}
+    L -- Sí --> M[/"Escribir: El secreto es mayor"/]
+    M --> C
+    L -- No --> N[/"Escribir: El secreto es menor"/]
+    N --> C
+```
 
 ## 7. Prueba de escritorio
 
