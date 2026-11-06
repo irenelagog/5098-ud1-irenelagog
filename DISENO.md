@@ -57,7 +57,7 @@ Eso significa que:
 - **Entradas no válidas:** si escriben "hola" u otra cosa que no sea un
   número, el programa dice que solo valen números y vuelve a pedirlo,
   sin contar el intento.
-- **Valores fuera de rango:** si escriben 107, el programa dice que el
+- **Valores fuera de rango:** si escriben 500, el programa dice que el
   rango va del 1 al 100 y vuelve a pedirlo, sin contar el intento.
 - **Terminación del bucle:** el bucle de intentos se repite hasta que el
   número coincide con el secreto. Solo entonces se sale y se muestran los
