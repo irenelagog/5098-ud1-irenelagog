@@ -77,6 +77,7 @@ Eso significa que:
 
 ## 5. Pseudocódigo
 
+```
 INICIO
     secreto ← número aleatorio entre 1 y 100
     intentos ← 0
@@ -107,6 +108,7 @@ INICIO
 
     ESCRIBIR "¡Has acertado! Intentos: ", intentos
 FIN
+```
 
 ## 6. Diagrama de flujo
 
