@@ -33,9 +33,22 @@ Eso significa que:
 
 ## 3. Estrategia
 
-<!-- Descomposición en subproblemas o refinamiento sucesivo en, al menos, dos niveles (apartado 3). -->
+**Nivel 1 (pasos grandes)**
+1. Preparar el juego
+2. Jugar (repetir intentos hasta acertar)
+3. Terminar
 
-_Pendiente._
+**Nivel 2 (cada paso dividido en otros más pequeños)**
+1. Preparar el juego
+   - 1.1. Elegir el número secreto entre 1 y 100
+   - 1.2. Poner el contador de intentos a 0
+2. Jugar
+   - 2.1. Pedir un número a la persona
+   - 2.2. Sumar 1 al contador de intentos
+   - 2.3. Comparar el número con el secreto y dar la pista
+3. Terminar
+   - 3.1. Decir que ha acertado
+   - 3.2. Mostrar cuántos intentos ha necesitado
 
 ## 4. Dificultades y casos de prueba
 
